@@ -1,0 +1,541 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		AB486D5F1DCB67C400C64D4A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB486D5E1DCB67C400C64D4A /* main.m */; };
+		AB486D621DCB67C400C64D4A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB486D611DCB67C400C64D4A /* AppDelegate.m */; };
+		AB486D651DCB67C400C64D4A /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB486D641DCB67C400C64D4A /* ViewController.m */; };
+		AB486D681DCB67C400C64D4A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB486D661DCB67C400C64D4A /* Main.storyboard */; };
+		AB486D6B1DCB67C400C64D4A /* DJ_WeiChat.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = AB486D691DCB67C400C64D4A /* DJ_WeiChat.xcdatamodeld */; };
+		AB486D6D1DCB67C400C64D4A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB486D6C1DCB67C400C64D4A /* Assets.xcassets */; };
+		AB486D701DCB67C400C64D4A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB486D6E1DCB67C400C64D4A /* LaunchScreen.storyboard */; };
+		AB486D7B1DCB67C400C64D4A /* DJ_WeiChatTests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB486D7A1DCB67C400C64D4A /* DJ_WeiChatTests.m */; };
+		AB486D861DCB67C400C64D4A /* DJ_WeiChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB486D851DCB67C400C64D4A /* DJ_WeiChatUITests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		AB486D771DCB67C400C64D4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB486D521DCB67C400C64D4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB486D591DCB67C400C64D4A;
+			remoteInfo = DJ_WeiChat;
+		};
+		AB486D821DCB67C400C64D4A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AB486D521DCB67C400C64D4A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AB486D591DCB67C400C64D4A;
+			remoteInfo = DJ_WeiChat;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		AB486D5A1DCB67C400C64D4A /* DJ_WeiChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DJ_WeiChat.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB486D5E1DCB67C400C64D4A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		AB486D601DCB67C400C64D4A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		AB486D611DCB67C400C64D4A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		AB486D631DCB67C400C64D4A /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		AB486D641DCB67C400C64D4A /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		AB486D671DCB67C400C64D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		AB486D6A1DCB67C400C64D4A /* DJ_WeiChat.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DJ_WeiChat.xcdatamodel; sourceTree = "<group>"; };
+		AB486D6C1DCB67C400C64D4A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		AB486D6F1DCB67C400C64D4A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		AB486D711DCB67C400C64D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB486D761DCB67C400C64D4A /* DJ_WeiChatTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJ_WeiChatTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB486D7A1DCB67C400C64D4A /* DJ_WeiChatTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJ_WeiChatTests.m; sourceTree = "<group>"; };
+		AB486D7C1DCB67C400C64D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AB486D811DCB67C400C64D4A /* DJ_WeiChatUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DJ_WeiChatUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		AB486D851DCB67C400C64D4A /* DJ_WeiChatUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DJ_WeiChatUITests.m; sourceTree = "<group>"; };
+		AB486D871DCB67C400C64D4A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		AB486D571DCB67C400C64D4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB486D731DCB67C400C64D4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB486D7E1DCB67C400C64D4A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		AB486D511DCB67C400C64D4A = {
+			isa = PBXGroup;
+			children = (
+				AB486D5C1DCB67C400C64D4A /* DJ_WeiChat */,
+				AB486D791DCB67C400C64D4A /* DJ_WeiChatTests */,
+				AB486D841DCB67C400C64D4A /* DJ_WeiChatUITests */,
+				AB486D5B1DCB67C400C64D4A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		AB486D5B1DCB67C400C64D4A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				AB486D5A1DCB67C400C64D4A /* DJ_WeiChat.app */,
+				AB486D761DCB67C400C64D4A /* DJ_WeiChatTests.xctest */,
+				AB486D811DCB67C400C64D4A /* DJ_WeiChatUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		AB486D5C1DCB67C400C64D4A /* DJ_WeiChat */ = {
+			isa = PBXGroup;
+			children = (
+				AB486D601DCB67C400C64D4A /* AppDelegate.h */,
+				AB486D611DCB67C400C64D4A /* AppDelegate.m */,
+				AB486D631DCB67C400C64D4A /* ViewController.h */,
+				AB486D641DCB67C400C64D4A /* ViewController.m */,
+				AB486D661DCB67C400C64D4A /* Main.storyboard */,
+				AB486D6C1DCB67C400C64D4A /* Assets.xcassets */,
+				AB486D6E1DCB67C400C64D4A /* LaunchScreen.storyboard */,
+				AB486D711DCB67C400C64D4A /* Info.plist */,
+				AB486D691DCB67C400C64D4A /* DJ_WeiChat.xcdatamodeld */,
+				AB486D5D1DCB67C400C64D4A /* Supporting Files */,
+			);
+			path = DJ_WeiChat;
+			sourceTree = "<group>";
+		};
+		AB486D5D1DCB67C400C64D4A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AB486D5E1DCB67C400C64D4A /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AB486D791DCB67C400C64D4A /* DJ_WeiChatTests */ = {
+			isa = PBXGroup;
+			children = (
+				AB486D7A1DCB67C400C64D4A /* DJ_WeiChatTests.m */,
+				AB486D7C1DCB67C400C64D4A /* Info.plist */,
+			);
+			path = DJ_WeiChatTests;
+			sourceTree = "<group>";
+		};
+		AB486D841DCB67C400C64D4A /* DJ_WeiChatUITests */ = {
+			isa = PBXGroup;
+			children = (
+				AB486D851DCB67C400C64D4A /* DJ_WeiChatUITests.m */,
+				AB486D871DCB67C400C64D4A /* Info.plist */,
+			);
+			path = DJ_WeiChatUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		AB486D591DCB67C400C64D4A /* DJ_WeiChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB486D8A1DCB67C400C64D4A /* Build configuration list for PBXNativeTarget "DJ_WeiChat" */;
+			buildPhases = (
+				AB486D561DCB67C400C64D4A /* Sources */,
+				AB486D571DCB67C400C64D4A /* Frameworks */,
+				AB486D581DCB67C400C64D4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DJ_WeiChat;
+			productName = DJ_WeiChat;
+			productReference = AB486D5A1DCB67C400C64D4A /* DJ_WeiChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+		AB486D751DCB67C400C64D4A /* DJ_WeiChatTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB486D8D1DCB67C400C64D4A /* Build configuration list for PBXNativeTarget "DJ_WeiChatTests" */;
+			buildPhases = (
+				AB486D721DCB67C400C64D4A /* Sources */,
+				AB486D731DCB67C400C64D4A /* Frameworks */,
+				AB486D741DCB67C400C64D4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB486D781DCB67C400C64D4A /* PBXTargetDependency */,
+			);
+			name = DJ_WeiChatTests;
+			productName = DJ_WeiChatTests;
+			productReference = AB486D761DCB67C400C64D4A /* DJ_WeiChatTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		AB486D801DCB67C400C64D4A /* DJ_WeiChatUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AB486D901DCB67C400C64D4A /* Build configuration list for PBXNativeTarget "DJ_WeiChatUITests" */;
+			buildPhases = (
+				AB486D7D1DCB67C400C64D4A /* Sources */,
+				AB486D7E1DCB67C400C64D4A /* Frameworks */,
+				AB486D7F1DCB67C400C64D4A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AB486D831DCB67C400C64D4A /* PBXTargetDependency */,
+			);
+			name = DJ_WeiChatUITests;
+			productName = DJ_WeiChatUITests;
+			productReference = AB486D811DCB67C400C64D4A /* DJ_WeiChatUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		AB486D521DCB67C400C64D4A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = xuyifei;
+				TargetAttributes = {
+					AB486D591DCB67C400C64D4A = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = WSEA9CY2HF;
+					};
+					AB486D751DCB67C400C64D4A = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = WSEA9CY2HF;
+						TestTargetID = AB486D591DCB67C400C64D4A;
+					};
+					AB486D801DCB67C400C64D4A = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = WSEA9CY2HF;
+						TestTargetID = AB486D591DCB67C400C64D4A;
+					};
+				};
+			};
+			buildConfigurationList = AB486D551DCB67C400C64D4A /* Build configuration list for PBXProject "DJ_WeiChat" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = AB486D511DCB67C400C64D4A;
+			productRefGroup = AB486D5B1DCB67C400C64D4A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				AB486D591DCB67C400C64D4A /* DJ_WeiChat */,
+				AB486D751DCB67C400C64D4A /* DJ_WeiChatTests */,
+				AB486D801DCB67C400C64D4A /* DJ_WeiChatUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		AB486D581DCB67C400C64D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB486D701DCB67C400C64D4A /* LaunchScreen.storyboard in Resources */,
+				AB486D6D1DCB67C400C64D4A /* Assets.xcassets in Resources */,
+				AB486D681DCB67C400C64D4A /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB486D741DCB67C400C64D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB486D7F1DCB67C400C64D4A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		AB486D561DCB67C400C64D4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB486D651DCB67C400C64D4A /* ViewController.m in Sources */,
+				AB486D6B1DCB67C400C64D4A /* DJ_WeiChat.xcdatamodeld in Sources */,
+				AB486D621DCB67C400C64D4A /* AppDelegate.m in Sources */,
+				AB486D5F1DCB67C400C64D4A /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB486D721DCB67C400C64D4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB486D7B1DCB67C400C64D4A /* DJ_WeiChatTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB486D7D1DCB67C400C64D4A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AB486D861DCB67C400C64D4A /* DJ_WeiChatUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		AB486D781DCB67C400C64D4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB486D591DCB67C400C64D4A /* DJ_WeiChat */;
+			targetProxy = AB486D771DCB67C400C64D4A /* PBXContainerItemProxy */;
+		};
+		AB486D831DCB67C400C64D4A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AB486D591DCB67C400C64D4A /* DJ_WeiChat */;
+			targetProxy = AB486D821DCB67C400C64D4A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		AB486D661DCB67C400C64D4A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB486D671DCB67C400C64D4A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		AB486D6E1DCB67C400C64D4A /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AB486D6F1DCB67C400C64D4A /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		AB486D881DCB67C400C64D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		AB486D891DCB67C400C64D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		AB486D8B1DCB67C400C64D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DJ_WeiChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "XYF.DJ-WeiChat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		AB486D8C1DCB67C400C64D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DJ_WeiChat/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "XYF.DJ-WeiChat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		AB486D8E1DCB67C400C64D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DJ_WeiChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "XYF.DJ-WeiChatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DJ_WeiChat.app/DJ_WeiChat";
+			};
+			name = Debug;
+		};
+		AB486D8F1DCB67C400C64D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DJ_WeiChatTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "XYF.DJ-WeiChatTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DJ_WeiChat.app/DJ_WeiChat";
+			};
+			name = Release;
+		};
+		AB486D911DCB67C400C64D4A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DJ_WeiChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "XYF.DJ-WeiChatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DJ_WeiChat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		AB486D921DCB67C400C64D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DJ_WeiChatUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "XYF.DJ-WeiChatUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DJ_WeiChat;
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		AB486D551DCB67C400C64D4A /* Build configuration list for PBXProject "DJ_WeiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB486D881DCB67C400C64D4A /* Debug */,
+				AB486D891DCB67C400C64D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		AB486D8A1DCB67C400C64D4A /* Build configuration list for PBXNativeTarget "DJ_WeiChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB486D8B1DCB67C400C64D4A /* Debug */,
+				AB486D8C1DCB67C400C64D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB486D8D1DCB67C400C64D4A /* Build configuration list for PBXNativeTarget "DJ_WeiChatTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB486D8E1DCB67C400C64D4A /* Debug */,
+				AB486D8F1DCB67C400C64D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AB486D901DCB67C400C64D4A /* Build configuration list for PBXNativeTarget "DJ_WeiChatUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AB486D911DCB67C400C64D4A /* Debug */,
+				AB486D921DCB67C400C64D4A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		AB486D691DCB67C400C64D4A /* DJ_WeiChat.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				AB486D6A1DCB67C400C64D4A /* DJ_WeiChat.xcdatamodel */,
+			);
+			currentVersion = AB486D6A1DCB67C400C64D4A /* DJ_WeiChat.xcdatamodel */;
+			path = DJ_WeiChat.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = AB486D521DCB67C400C64D4A /* Project object */;
+}

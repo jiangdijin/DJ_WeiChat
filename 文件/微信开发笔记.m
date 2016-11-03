@@ -50,9 +50,12 @@ XCTAssertNoThrowSpecificNamed(expression, specificException, exception_name, for
 >3.本地的公钥与官网上的SSH Key关联
 >3.1 在终端运行代码   "ssh-keygen -t rsa -C "xyf1992@sohu.com""  然后直接回车到底,提示输入密码不要输入,这时会在个人下面出现.ssh文件,.ssh文件下面会有2个文件   id_rsa私钥:自己保存好,不能泄露    id_rsa.pub公钥:用于关联github
 >3.2 在github网站上找到ssh key 添加key:就是id_rsa.pub文件里的内容
+>3.3 git remote add origin git@github.com:jiangdijin/DJ_WeiChat  将本地仓库与远程仓库关联起来
 >4.将远程版本库克隆到本地    "git clone https://github.com/jiangdijin/DJ_WeiChat"代码
 >5.接下来就可以在这个文件下开始项目了
->5.1
+>5.1 git add .  推送到暂缓区
+>5.2 git commit -xxxxx  版本提交
+>5.3 git push 
 
 
 
