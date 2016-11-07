@@ -12,7 +12,23 @@
 
 
 #define DJScreenW [UIScreen mainScreen].bounds.size.width
+#define DJScreenH [UIScreen mainScreen].bounds.size.height
 #define DJScreenBounds [UIScreen mainScreen].bounds
+#define DJItemFont [UIFont systemFontOfSize:13]
+#define DJTitleFont [UIFont systemFontOfSize:15]
+
+
+
+//判断iPhone和iPad
+#define IS_IPHONE (!IS_IPAD)
+#define IS_IPAD (UI_USER_INTERFACE_IDIOM() != UIUserInterfaceIdiomPhone)
+//判断设备版本
+
+#define IS_IOS10 floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_9_1
+#define IS_IOS9 floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_8_1
+#define IS_IOS8 floor(NSFoundationVersionNumber) > NSFoundationVersionNumber_iOS_7_1
+#define IS_IOS7_LAGACY floor(NSFoundationVersionNumber) <= NSFoundationVersionNumber_iOS_7_1
+
 
 // Include any system framework and library headers here that should be included in all compilation units.
 // You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.

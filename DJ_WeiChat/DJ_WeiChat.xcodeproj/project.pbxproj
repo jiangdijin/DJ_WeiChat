@@ -17,8 +17,10 @@
 		AB486D861DCB67C400C64D4A /* DJ_WeiChatUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = AB486D851DCB67C400C64D4A /* DJ_WeiChatUITests.m */; };
 		AB486D9D1DCB6B4100C64D4A /* DJLoginController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB486D9C1DCB6B4100C64D4A /* DJLoginController.m */; };
 		AB486DA11DCB71BC00C64D4A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB486DA01DCB71BC00C64D4A /* Images.xcassets */; };
-		AB486DA41DCB772700C64D4A /* DJHeadView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB486DA31DCB772700C64D4A /* DJHeadView.m */; };
 		AB992B691DCFF58000E8AD4F /* DJLoginView.m in Sources */ = {isa = PBXBuildFile; fileRef = AB992B681DCFF58000E8AD4F /* DJLoginView.m */; };
+		AB992B731DD0A39B00E8AD4F /* UIBarButtonItem+Item.m in Sources */ = {isa = PBXBuildFile; fileRef = AB992B721DD0A39B00E8AD4F /* UIBarButtonItem+Item.m */; };
+		AB992B761DD0A6DD00E8AD4F /* DJLoginNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB992B751DD0A6DD00E8AD4F /* DJLoginNavigationViewController.m */; };
+		AB992B7C1DD0B8D300E8AD4F /* UILabel+DJLable.m in Sources */ = {isa = PBXBuildFile; fileRef = AB992B7B1DD0B8D300E8AD4F /* UILabel+DJLable.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,11 +59,15 @@
 		AB486D9B1DCB6B4100C64D4A /* DJLoginController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJLoginController.h; sourceTree = "<group>"; };
 		AB486D9C1DCB6B4100C64D4A /* DJLoginController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJLoginController.m; sourceTree = "<group>"; };
 		AB486DA01DCB71BC00C64D4A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; name = Images.xcassets; path = ../Images.xcassets; sourceTree = "<group>"; };
-		AB486DA21DCB772700C64D4A /* DJHeadView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJHeadView.h; sourceTree = "<group>"; };
-		AB486DA31DCB772700C64D4A /* DJHeadView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJHeadView.m; sourceTree = "<group>"; };
 		AB486DA61DCB77D500C64D4A /* DJ_WeiChat.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DJ_WeiChat.pch; sourceTree = "<group>"; };
 		AB992B671DCFF58000E8AD4F /* DJLoginView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJLoginView.h; sourceTree = "<group>"; };
 		AB992B681DCFF58000E8AD4F /* DJLoginView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJLoginView.m; sourceTree = "<group>"; };
+		AB992B711DD0A39B00E8AD4F /* UIBarButtonItem+Item.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+Item.h"; sourceTree = "<group>"; };
+		AB992B721DD0A39B00E8AD4F /* UIBarButtonItem+Item.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+Item.m"; sourceTree = "<group>"; };
+		AB992B741DD0A6DD00E8AD4F /* DJLoginNavigationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DJLoginNavigationViewController.h; sourceTree = "<group>"; };
+		AB992B751DD0A6DD00E8AD4F /* DJLoginNavigationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DJLoginNavigationViewController.m; sourceTree = "<group>"; };
+		AB992B7A1DD0B8D300E8AD4F /* UILabel+DJLable.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+DJLable.h"; sourceTree = "<group>"; };
+		AB992B7B1DD0B8D300E8AD4F /* UILabel+DJLable.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+DJLable.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +169,8 @@
 			children = (
 				AB486D9B1DCB6B4100C64D4A /* DJLoginController.h */,
 				AB486D9C1DCB6B4100C64D4A /* DJLoginController.m */,
+				AB992B741DD0A6DD00E8AD4F /* DJLoginNavigationViewController.h */,
+				AB992B751DD0A6DD00E8AD4F /* DJLoginNavigationViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -177,8 +185,6 @@
 		AB486D9A1DCB6B1100C64D4A /* View */ = {
 			isa = PBXGroup;
 			children = (
-				AB486DA21DCB772700C64D4A /* DJHeadView.h */,
-				AB486DA31DCB772700C64D4A /* DJHeadView.m */,
 				AB992B671DCFF58000E8AD4F /* DJLoginView.h */,
 				AB992B681DCFF58000E8AD4F /* DJLoginView.m */,
 			);
@@ -195,6 +201,7 @@
 		AB486D9F1DCB6CE100C64D4A /* Other */ = {
 			isa = PBXGroup;
 			children = (
+				AB992B6D1DD0A0C600E8AD4F /* Category */,
 				AB486D661DCB67C400C64D4A /* Main.storyboard */,
 				AB486DA01DCB71BC00C64D4A /* Images.xcassets */,
 				AB486D6C1DCB67C400C64D4A /* Assets.xcassets */,
@@ -204,6 +211,17 @@
 				AB486DA61DCB77D500C64D4A /* DJ_WeiChat.pch */,
 			);
 			path = Other;
+			sourceTree = "<group>";
+		};
+		AB992B6D1DD0A0C600E8AD4F /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				AB992B711DD0A39B00E8AD4F /* UIBarButtonItem+Item.h */,
+				AB992B721DD0A39B00E8AD4F /* UIBarButtonItem+Item.m */,
+				AB992B7A1DD0B8D300E8AD4F /* UILabel+DJLable.h */,
+				AB992B7B1DD0B8D300E8AD4F /* UILabel+DJLable.m */,
+			);
+			path = Category;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -341,10 +359,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				AB992B731DD0A39B00E8AD4F /* UIBarButtonItem+Item.m in Sources */,
 				AB992B691DCFF58000E8AD4F /* DJLoginView.m in Sources */,
 				AB486D6B1DCB67C400C64D4A /* DJ_WeiChat.xcdatamodeld in Sources */,
+				AB992B7C1DD0B8D300E8AD4F /* UILabel+DJLable.m in Sources */,
 				AB486D9D1DCB6B4100C64D4A /* DJLoginController.m in Sources */,
-				AB486DA41DCB772700C64D4A /* DJHeadView.m in Sources */,
+				AB992B761DD0A6DD00E8AD4F /* DJLoginNavigationViewController.m in Sources */,
 				AB486D621DCB67C400C64D4A /* AppDelegate.m in Sources */,
 				AB486D5F1DCB67C400C64D4A /* main.m in Sources */,
 			);
@@ -495,6 +515,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets-2";
 				INFOPLIST_FILE = DJ_WeiChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "XYF.DJ-WeiChat";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -507,6 +528,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets-2";
 				INFOPLIST_FILE = DJ_WeiChat/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "XYF.DJ-WeiChat";
 				PRODUCT_NAME = "$(TARGET_NAME)";

@@ -1,5 +1,5 @@
 //
-//  DJLoginView.h
+//  DJLoginNavigationViewController.h
 //  DJ_WeiChat
 //
 //  Created by xuyifei on 16/11/7.
@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DJLoginView : UIImageView
-
+@interface DJLoginNavigationViewController : UINavigationController
 
 @end

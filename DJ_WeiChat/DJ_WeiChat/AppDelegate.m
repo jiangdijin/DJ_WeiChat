@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "DJLoginController.h"
+#import "DJLoginNavigationViewController.h"
 
 @interface AppDelegate ()
 
@@ -28,7 +29,8 @@
     // Override point for customization after application launch.
     
     //登录界面的控制器
-    DJLoginController *LoginVC = [[DJLoginController alloc]init];
+    DJLoginController *Login = [[DJLoginController alloc]init];
+    DJLoginNavigationViewController *LoginVC = [[DJLoginNavigationViewController alloc]initWithRootViewController:Login];
     //设置根控制器
     self.window.rootViewController = LoginVC;
 

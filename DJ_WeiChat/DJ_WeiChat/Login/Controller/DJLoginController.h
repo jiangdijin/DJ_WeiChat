@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface DJLoginController : UINavigationController
+@interface DJLoginController : UIViewController
 
 @end
