@@ -1,5 +1,5 @@
 //
-//  AppDelegate.h
+//  DJHeadView.h
 //  DJ_WeiChat
 //
 //  Created by xuyifei on 16/11/3.
@@ -8,12 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-
-@interface AppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
-
-
+@interface DJHeadView : UIView
 
 @end
-
