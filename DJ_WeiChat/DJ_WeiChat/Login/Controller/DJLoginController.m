@@ -7,13 +7,39 @@
 //
 
 #import "DJLoginController.h"
-#import "DJLoginView.h"
+#import "DJLoginBackgrountView.h"
 #import "UIBarButtonItem+Item.h"
 #import "UILabel+DJLable.h"
+#import "DJLoginView.h"
+#import "DJOtherLoginView.h"
 
 @interface DJLoginController ()
 
+/*
+ *背景view
+ */
+@property (nonatomic ,weak) DJLoginBackgrountView *LoginBackgrountView;
+
+/*
+ *登录view
+ */
 @property (nonatomic ,weak) DJLoginView *LoginView;
+/*
+ *登录界面的frame
+ */
+@property (nonatomic ,assign) CGRect LoginViewframe;
+
+
+/*
+ *第三方登录view
+ */
+@property (nonatomic ,weak) DJOtherLoginView *OtherLoginView;
+/*
+ *第三方登录界面的frame
+ */
+@property (nonatomic ,assign) CGRect OtherLoginViewframe;
+
+
 /*
  *添加子控制器
  */
@@ -29,9 +55,31 @@
  *点击注册按钮
  */
 - (void)register;
+
+
 @end
 
 @implementation DJLoginController
+
+#pragma LoginViewframe懒加载
+-(CGRect)LoginViewframe{
+    if (IS_IPHONE) {
+        _LoginViewframe = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height * 0.7);
+    }else{
+        _LoginViewframe = CGRectMake((DJScreenBounds.size.width - 414) / 2.0, (DJScreenBounds.size.height - 736) / 2.0, 414, 736 * 0.7);
+    }
+    return _LoginViewframe;
+}
+
+#pragma mark  OtherLoginViewframe懒加载
+-(CGRect)OtherLoginViewframe{
+    if (IS_IPHONE) {
+        _OtherLoginViewframe = CGRectMake(0, self.LoginView.frame.size.height, self.view.frame.size.width, self.view.frame.size.height - self.LoginView.frame.size.height);
+    }else{
+        _OtherLoginViewframe = CGRectMake((DJScreenBounds.size.width - 414) / 2.0, self.LoginView.frame.origin.y + self.LoginView.frame.size.height, 414,(DJScreenH -  (self.LoginView.frame.origin.y + self.LoginView.frame.size.height)) / 2.0);
+    }
+    return _OtherLoginViewframe;
+}
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -70,12 +118,27 @@
 #pragma mark 添加子控制器
 -(void)addChildView{
     
-    DJLoginView *LoginView = [[DJLoginView alloc]initWithFrame:self.view.frame];
     
-    self.LoginView = LoginView;
+    //添加背景view
+    DJLoginBackgrountView *LoginBackgrountView = [[DJLoginBackgrountView alloc]initWithFrame:self.view.frame];
     
-    [self.view addSubview:LoginView];
+    self.LoginBackgrountView = LoginBackgrountView;
+    [self.view addSubview:LoginBackgrountView];
     
+    
+    //添加登录界面
+    DJLoginView *LoginView = [[DJLoginView alloc]initWithFrame:self.LoginViewframe];
+
+    _LoginView = LoginView;
+
+   [self.view addSubview:self.LoginView];
+    
+    //添加第三方界面
+    DJOtherLoginView *OtherLoginView = [[DJOtherLoginView alloc]initWithFrame:self.OtherLoginViewframe];
+    OtherLoginView.backgroundColor = [UIColor redColor];
+    _OtherLoginView = OtherLoginView;
+    
+    [self.view addSubview:self.OtherLoginView];
 
 }
 

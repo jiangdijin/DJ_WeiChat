@@ -1,13 +1,13 @@
 //
-//  DJLoginView.h
+//  DJOtherLoginView.h
 //  DJ_WeiChat
 //
-//  Created by xuyifei on 16/11/7.
+//  Created by xuyifei on 16/11/10.
 //  Copyright © 2016年 xuyifei. All rights reserved.
-//  登录界面
+//
 
 #import <UIKit/UIKit.h>
 
-@interface DJLoginView : UIView
+@interface DJOtherLoginView : UIView
 
 @end

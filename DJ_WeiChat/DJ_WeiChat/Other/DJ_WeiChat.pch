@@ -16,6 +16,12 @@
 #define DJScreenBounds [UIScreen mainScreen].bounds
 #define DJItemFont [UIFont systemFontOfSize:13]
 #define DJTitleFont [UIFont systemFontOfSize:15]
+#define DJTextFont [UIFont systemFontOfSize:15]
+#define DJFont14 [UIFont systemFontOfSize:14]
+#define DJFont13 [UIFont systemFontOfSize:13]
+#define DJFont12 [UIFont systemFontOfSize:12]
+#define DJFont11 [UIFont systemFontOfSize:11]
+
 
 
 
