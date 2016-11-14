@@ -7,13 +7,12 @@
 //
 
 #import "DJLoginView.h"
-#define DJMargin (0.05 * self.frame.size.height)
+#define DJMargin (0.07 * self.frame.size.height)
 #define DJTextColor [UIColor whiteColor]
 #define DJLoginViewFrame
 
-@interface DJLoginView ()
+@interface DJLoginView ()<UITextFieldDelegate>
 {    
-    UIImageView *_Icon;//头像
     UILabel *_usernameLable;//用户名
     UITextField *_usernameText;//用户名输入框
     UILabel *_passwordLable;//密码
@@ -149,6 +148,7 @@
     _usernameText.placeholder = @"username";
     _usernameText.textColor = DJTextColor;
     _usernameText.font = DJTextFont;
+    _usernameText.delegate = self;
     
     //line1
     _line1.backgroundColor = DJTextColor;
@@ -163,6 +163,8 @@
     _passwordText.placeholder = @"password";
     _passwordText.textColor = DJTextColor;
     _passwordText.font = DJTitleFont;
+    _passwordText.clearButtonMode = UITextFieldViewModeAlways;
+    _passwordText.secureTextEntry = YES;
     
     //line2
     _line2.backgroundColor = DJTextColor;
@@ -170,7 +172,7 @@
     //login
     [_Login setTitle:@"登录" forState:UIControlStateNormal];
     _Login.titleLabel.font = DJTitleFont;
-    [_Login setBackgroundColor:[UIColor greenColor]];
+    [_Login setBackgroundColor:[UIColor colorWithRed:58.0/255 green:157.0/255 blue:82.0/255 alpha:1.0]];
     [_Login addTarget:self action:@selector(loginClick) forControlEvents:UIControlEventTouchUpInside];
     _Login.layer.cornerRadius = 5;
     _Login.adjustsImageWhenHighlighted = YES;
@@ -206,7 +208,7 @@
     heightConstraint.active = YES;
     widchConstraint.active = YES;
     
-    _Icon.translatesAutoresizingMaskIntoConstraints = NO;
+    self.Icon.translatesAutoresizingMaskIntoConstraints = NO;
 }
 
 #pragma mark 设置usernameLable的Constraint
@@ -387,13 +389,28 @@
 #pragma mark -------------按钮调用方法----------------
 #pragma mark 登录按钮
 -(void)loginClick{
-    NSLog(@"%s",__func__);
+//    NSLog(@"%s",__func__);
+    if ([self.delegate respondsToSelector:@selector(DJLoginvIewDidClickLoginButton:AndPassWordText:)]) {
+        [self.delegate DJLoginvIewDidClickLoginButton:_Login AndPassWordText:_passwordText];
+    }
 }
 
 #pragma mark 忘记密码按钮
 -(void)forgetClick{
-    NSLog(@"%s",__func__);
+    
+//    NSLog(@"%s",__func__);
+    if ([self.delegate respondsToSelector:@selector(DJLoginvIewDidClickForgetClick:)]) {
+        [self.delegate DJLoginvIewDidClickForgetClick:_forgetPW];
+    }
 }
 
+#pragma mark ------------监听输入框状态-------------
+-(void)textFieldDidEndEditing:(UITextField *)textField{
+    
+    if ([self.delegate respondsToSelector:@selector(DJLoginViewUsernametextDidEndEditing:)]) {
+        [self.delegate DJLoginViewUsernametextDidEndEditing:textField];
+    }
+    
+}
 
 @end

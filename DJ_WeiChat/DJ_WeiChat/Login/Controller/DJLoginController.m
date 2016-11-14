@@ -13,7 +13,7 @@
 #import "DJLoginView.h"
 #import "DJOtherLoginView.h"
 
-@interface DJLoginController ()
+@interface DJLoginController ()<DJLoginViewDelegate,DJOtherLoginViewDelegate>
 
 /*
  *背景view
@@ -64,9 +64,9 @@
 #pragma LoginViewframe懒加载
 -(CGRect)LoginViewframe{
     if (IS_IPHONE) {
-        _LoginViewframe = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height * 0.7);
+        _LoginViewframe = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height * 0.8);
     }else{
-        _LoginViewframe = CGRectMake((DJScreenBounds.size.width - 414) / 2.0, (DJScreenBounds.size.height - 736) / 2.0, 414, 736 * 0.7);
+        _LoginViewframe = CGRectMake((DJScreenBounds.size.width - 414) / 2.0, (DJScreenBounds.size.height - 736) / 2.0, 414, 736 * 0.8);
     }
     return _LoginViewframe;
 }
@@ -126,21 +126,62 @@
     [self.view addSubview:LoginBackgrountView];
     
     
+    
     //添加登录界面
     DJLoginView *LoginView = [[DJLoginView alloc]initWithFrame:self.LoginViewframe];
-
+    LoginView.delegate = self;
     _LoginView = LoginView;
 
    [self.view addSubview:self.LoginView];
     
+    
+    
     //添加第三方界面
     DJOtherLoginView *OtherLoginView = [[DJOtherLoginView alloc]initWithFrame:self.OtherLoginViewframe];
-    OtherLoginView.backgroundColor = [UIColor redColor];
+    OtherLoginView.delegate = self;
     _OtherLoginView = OtherLoginView;
+//    _OtherLoginView.backgroundColor = [UIColor grayColor];
     
     [self.view addSubview:self.OtherLoginView];
 
+
 }
+
+#pragma mark  ------------登录界面的代理方法---------
+
+#pragma mark 当用户名输入框输入完毕后调用
+-(void)DJLoginViewUsernametextDidEndEditing:(UITextField *)textField{
+    NSLog(@"输入完毕");
+}
+
+#pragma mark 当点击登录按钮
+-(void)DJLoginvIewDidClickLoginButton:(UIButton *)btn AndPassWordText:(UITextField *)textField{
+    NSLog(@"登录");
+}
+
+#pragma mark 当点击忘记密码按钮
+-(void)DJLoginvIewDidClickForgetClick:(UIButton *)btn{
+    NSLog(@"忘记密码");
+}
+
+#pragma mark -------------第三方登录的代理方法
+
+#pragma mark 使用微博登录
+-(void)DJOtherLoginViewDidClickWeibo:(UIButton *)btn{
+    NSLog(@"使用微博登录");
+}
+
+
+#pragma mark 使用QQ登录
+-(void)DJOtherLoginViewDidClickQQ:(UIButton *)btn{
+    NSLog(@"使用QQ登录");
+}
+
+#pragma mark 使用微信登录
+-(void)DJOtherLoginViewDidClickWeiChat:(UIButton *)btn{
+    NSLog(@"使用微信登录");
+}
+
 
 #pragma mark ---注册
 - (void)register{
